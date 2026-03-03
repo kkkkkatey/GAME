@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>武俠文字冒險</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      padding: 40px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input, select, button {
+      margin: 10px 0;
+      padding: 8px;
+      width: 80%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>开启新旅程</h2>
+    <p>诸天万界将如何称呼你？</p >
+    <input type="text" id="name" placeholder="输入你的姓名...">
 
+    <p>性别</p >
+    <select id="gender">
+      <option value="男">男</option>
+      <option value="女">女</option>
+    </select>
+
+    <p>出身</p >
+    <select id="origin">
+      <option value="山村少年">山村少年</option>
+      <option value="世家子弟">世家子弟</option>
+      <option value="落魄书生">落魄书生</option>
+      <option value="江湖散人">江湖散人</option>
+    </select>
+
+    <button onclick="startJourney()">踏入修行界</button>
+  </div>
+
+  <script>
+    function startJourney() {
+      const name = document.getElementById("name").value;
+      const gender = document.getElementById("gender").value;
+      const origin = document.getElementById("origin").value;
+
+      if (!name) {
+        alert("请先输入姓名！");
+        return;
+      }
+
+      alert(`你的旅程开始了！\n姓名：${name}\n性别：${gender}\n出身：${origin}`);
+    }
+  </script>
+</body>
+</html>
