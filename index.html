@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh">
+  
 <head>
   <meta charset="UTF-8">
   <title>武俠文字冒險</title>
+  
   <!-- 連結外部 CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- 引入外部 JS -->
+  <script src="script.js">
+  </script> 
 </head>
+  
 <body>
   <!-- 第一個畫面：角色建立 -->
   <div id="screen1" class="screen active">
     <h1>開始新的旅程</h1>
-    <p>諸天萬界將如何稱呼你？</p>
+    <p>設定你的基本資料</p>
     <form id="characterForm">
       姓名：<input type="text" id="name"><br>
       性別：
@@ -37,10 +44,6 @@
       <p id="summary"></p> 
       <button id="nextBtn">繼續冒險</button> 
     </div>
-  </div>
-
-  <!-- 引入外部 JS -->
-  <script src="script.js">
-  </script> 
-</body> 
-</html>
+   </div>
+  </body>
+  </html>
