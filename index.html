@@ -3,37 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>武俠文字冒險</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="screen1" class="screen active">
-    <h1>開始新的旅程</h1>
-    <p>設定你的基本資料</p>
-    <form id="characterForm">
-      姓名：<input type="text" id="name"><br>
-      性別：
-      <select id="gender">
-        <option>男</option>
-        <option>女</option>
-      </select><br>
-      出身：
-      <select id="origin">
-        <option>世家子弟</option>
-        <option>平民百姓</option>
-        <option>孤兒</option>
-      </select><br>
-      <button type="button" id="startBtn">踏入修行界</button>
-    </form>
+  <!-- 玩家狀態列 -->
+  <div id="status-bar">
+    <span id="player-name">玩家：苡宸</span>
+    <span id="hp">HP: 30/30</span>
+    <span id="mp">MP: 10/10</span>
+    <span id="money">銀兩: 100</span>
   </div>
 
-  <div id="screen2" class="screen">
-    <div class="story-box"> 
-      <h2>你的旅程開始了！</h2>
-    </div>
-    <div class="info-box"> 
-      <p id="summary"></p> 
-      <button id="nextBtn">繼續冒險</button> 
-    </div>
+  <!-- 劇情文字區 -->
+  <div id="story-box">
+    <p id="story-text">你的旅程開始了！</p>
+  </div>
+
+  <!-- 劇情選項按鈕 -->
+  <div id="choice-buttons">
+    <button id="choice1">選項 1</button>
+    <button id="choice2">選項 2</button>
+    <button id="choice3">選項 3</button>
+  </div>
+
+  <!-- 功能按鈕 -->
+  <div id="menu-buttons">
+    <button id="bag">🎒 包裹</button>
+    <button id="skills">🥋 武學</button>
+    <button id="settings">⚙️ 設定</button>
   </div>
 
   <script src="script.js"></script>
