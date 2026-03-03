@@ -32,12 +32,9 @@ button:hover {
   background: #45a049;
 }
 
-.screen {
-  display: none;   /* 預設隱藏 */
-}
-.active {
-  display: block;  /* 只有 active 的畫面會顯示 */
-}
+/* 控制畫面顯示 */
+.screen { display: none; }
+.active { display: block; }
 
 /* 第二個畫面排版 */
 #screen2 {
@@ -63,4 +60,3 @@ button:hover {
   padding: 15px;
   border-radius: 10px;
 }
-
