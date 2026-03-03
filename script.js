@@ -12,9 +12,3 @@ document.getElementById("startBtn").addEventListener("click", function() {
   document.getElementById("screen1").classList.remove("active");
   document.getElementById("screen2").classList.add("active");
 });
-
-// 繼續冒險 → 切換到第三個畫面
-document.getElementById("nextBtn").addEventListener("click", function() {
-  document.getElementById("screen2").classList.remove("active");
-  document.getElementById("screen3").classList.add("active");
-});
